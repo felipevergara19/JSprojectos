@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Web</title>
+  <!-- <link rel="stylesheet" href="dsng.css" /> -->
+  <!-- Enlaza tu archivo JavaScript aquí -->
+  <script src="calculator.js"></script>
+  <script>let total = '';</script>
+
+</head>
+
+<body>
+  
+  <p>
+    <input id="ingreso" type="text" placeholder=" " readonly >
+  </p>
+  <div onclick="document.getElementById('ingreso').value = total">
+  <p>
+    <button onclick="total += '0';">0</button>
+    <button onclick="total += '1';">1</button>
+    <button onclick="total += '2';">2</button>
+  </p>
+  <p>
+    <button onclick="total += '3';">3</button>
+    <button onclick="total += '4';">4</button>
+    <button onclick="total += '5';">5</button>
+  </p>
+  <p>
+    <button onclick="total += '6';">6</button>
+    <button onclick="total += '7';">7</button>
+    <button onclick="total += '8';">8</button>
+    <button onclick="total += '9';">9</button>
+  </p>
+    <button onclick="total += '+'">+</button>
+    <button onclick="total += '-'">-</button>
+    <button onclick="total += '*'">*</button>
+    <button onclick="total += '/'">/</button>
+  </p>
+</div> 
+  <p>
+    <button onclick="resultado(total)">Enter</button>
+    <button onclick="total = ''; limpiar()">Clean</button>
+  </p>
+  
+</body>
+
+</html>

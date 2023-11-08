@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <!-- Enlaza tu archivo JavaScript aquí -->
+    <script src="janken.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Janken</h1>
+    </header>   
+    <main>
+      <button onclick="juego(1)">Piedra</button>
+      <button onclick="juego(2)">Papel</button>
+      <button onclick="juego(3)">Tijeras</button>
+        <script>const score = {
+          wins: 0,
+          loses: 0,
+          ties: 0,
+        }</script>
+    </main>
+   </body>
+</html>
